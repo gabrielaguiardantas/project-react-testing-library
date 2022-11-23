@@ -26,6 +26,7 @@ describe('some tests in the Pokemon component', () => {
     });
     expect(pikachuName).toBeInTheDocument();
     expect(pikachuType).toBeInTheDocument();
+    expect(pikachuType.innerHTML).toBe('Electric');
     expect(pikachuWeight).toBeInTheDocument();
     expect(pikachuLink).toBeInTheDocument();
     expect(pikachuImg).toBeInTheDocument();
