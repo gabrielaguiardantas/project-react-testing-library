@@ -16,6 +16,8 @@ describe('some tests in the component Pokedex', () => {
     143: false,
     148: false,
     151: false };
+  const typeTestId = 'pokemon-type-button';
+
   it('has a h2 with text: "Encountered Pokémon', () => {
     renderWithRouter(<Pokedex
       pokemonList={ pokemonList }
@@ -69,7 +71,7 @@ describe('some tests in the component Pokedex', () => {
       pokemonList={ pokemonList }
       isPokemonFavoriteById={ isPokemonFavoriteById }
     />);
-    const filterButtons = screen.getAllByTestId('pokemon-type-button');
+    const filterButtons = screen.getAllByTestId(typeTestId);
     expect(filterButtons).toHaveLength(7);
   });
   it('filter buttons works properly', () => {
@@ -77,7 +79,7 @@ describe('some tests in the component Pokedex', () => {
       pokemonList={ pokemonList }
       isPokemonFavoriteById={ isPokemonFavoriteById }
     />);
-    const filteredButton = screen.getAllByTestId('pokemon-type-button')[0]; // qualquer elemento desse array deve retornar true no expect
+    const filteredButton = screen.getAllByTestId(typeTestId)[0]; // qualquer elemento desse array deve retornar true no expect
     userEvent.click(filteredButton);
     const typeTextOnTheScreen = screen.getAllByText(filteredButton.innerHTML);
     expect(typeTextOnTheScreen).toHaveLength(2);
@@ -97,7 +99,7 @@ describe('some tests in the component Pokedex', () => {
       name: /all/i,
     });
     expect(allPokemonButton).toBeInTheDocument();
-    const filteredButton = screen.getAllByTestId('pokemon-type-button')[3];
+    const filteredButton = screen.getAllByTestId(typeTestId)[3];
     userEvent.click(filteredButton);
     const pikachuNameEl2 = screen.queryByText(/pikachu/i);
     expect(pikachuNameEl2).not.toBeInTheDocument();
