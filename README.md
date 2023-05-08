@@ -1,10 +1,10 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Projeto Testes em React #
+
+Décimo segundo projeto do curso de desenvolvimento Web da Trybe e sexto do módulo de FrontEnd. Nesse projeto desenvolvi uma série de testes para uma aplicação e tive o primeiro contato com o RTL - React Testing Library. O foco era em aprender o RTL e sobre a importância e cobertura de testes. Conhecimentos principais desenvolvidos e aperfeiçoados nesse projeto:
+
+- Testes;
+- Matchers;
+- Stryker (testador de testes); 
+
+## Demonstração: ##
+
